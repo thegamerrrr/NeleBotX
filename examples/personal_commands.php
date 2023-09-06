@@ -6,8 +6,8 @@
 // Creation of the Table if not exists
 $db->query("CREATE TABLE IF NOT EXISTS `personal_commands` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `chat_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
+  `chat_id` BIGINT(20) NOT NULL,
+  `user_id` BIGINT(20) NOT NULL,
   `command` varchar(255) NOT NULL,
   `tect` text NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
